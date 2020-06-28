@@ -1,0 +1,128 @@
+:root {
+  --black: #333;
+  --blue: #567b95;
+  --dark-blue: #326891;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  color: var(--black);
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/* Nav bar */
+
+.nav-bar {
+  grid-column: 1 / -1;
+  font-family: helvetica, arial, sans-serif;
+  padding-top: 0.4rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid #e2e2e2;
+  position: relative;
+}
+
+/* Nav bar left */
+
+.nav-bar-left {
+  position: absolute;
+  left: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-bar-left > *:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.nav-bar-left button {
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.4rem;
+  background: none;
+  border: none;
+}
+
+.nav-bar-left button:hover {
+  background-color: #f7f7f7;
+}
+
+.section-text {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.section-text:hover {
+  text-decoration: underline;
+}
+
+/* Nav bar center */
+
+.nyt-logo-link {
+  display: block;
+  width: 20rem;
+  margin: 0 auto;
+}
+
+.nyt-logo {
+  width: 100%;
+  height: 100%;
+}
+
+/* Nav bar right */
+
+.nav-bar-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2rem;
+}
+
+.nav-bar-right button {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 0.9rem 1.2rem 0.7rem 1.2rem;
+  background-color: var(--blue);
+  border: none;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+.nav-bar-right button:hover {
+  background-color: var(--dark-blue);
+}
+
+.nav-bar-right > *:not(:last-child) {
+  margin-right: 0.3rem;
+}
