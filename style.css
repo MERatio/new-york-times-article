@@ -126,3 +126,130 @@ button {
 .nav-bar-right > *:not(:last-child) {
   margin-right: 0.3rem;
 }
+
+/* Content */
+
+.content {
+  margin-top: 6rem;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.header {
+  font-family: 'Times New Roman', Times, serif;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  row-gap: 2rem;
+  justify-items: center;
+}
+
+.header-title {
+  width: 60rem;
+  font-size: 4rem;
+  color: #121212;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 5rem;
+  grid-column: 1 / -1;
+}
+
+.header-img-figure {
+  grid-column: 1 / -1;
+  width: 94.5rem;
+}
+
+.header-img-caption {
+  font-size: 1.5rem;
+  color: #666;
+  margin-top: 1rem;
+  margin-right: 28%;
+}
+
+.img-owner {
+  font-size: 1.3rem;
+  color: #888;
+}
+
+/* Header bottom */
+
+.header-bottom {
+  margin-top: 1.5rem;
+  width: 60rem;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 2rem;
+}
+
+.by {
+  font-size: 1.5rem;
+  font-weight: 700;
+  grid-column: 1 / -1;
+}
+
+.author {
+  text-decoration: underline #ccc;
+}
+
+.author:hover {
+  text-decoration: none;
+}
+
+.article-upload-date {
+  font-size: 1.3rem;
+}
+
+.actions {
+  list-style-type: none;
+  display: grid;
+  justify-self: end;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.5rem;
+}
+
+.action i {
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+}
+
+.action:nth-child(-n + 4) i {
+  font-size: 1.4rem;
+  padding: 0.8rem;
+  background-color: #eee;
+  border: 1px solid #eee;
+  border-radius: 50%;
+  margin-top: -0.5rem;
+}
+
+.action:nth-child(-n + 4) i:hover {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.action:nth-last-child(-n + 2) i {
+  font-size: 2.4rem;
+  color: #666;
+}
+
+.action:nth-last-child(-n + 2) i:hover {
+  color: #ddd;
+}
+
+.action:last-child i {
+  font-size: 3.2rem;
+  align-self: flex-start;
+  position: relative;
+}
+
+.comment-count {
+  font-size: 1.1rem;
+  color: #000 !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+}
