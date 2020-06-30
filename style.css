@@ -1,5 +1,6 @@
 :root {
   --black: #333;
+  --grey: #666;
   --blue: #567b95;
   --dark-blue: #326891;
 }
@@ -32,6 +33,52 @@ img {
 
 button {
   cursor: pointer;
+}
+
+.figcaption {
+  font-size: 1.5rem;
+  color: var(--grey);
+  margin-top: 1rem;
+}
+
+.credit-to {
+  font-size: 1.3rem;
+  color: #888;
+}
+
+.blue-link {
+  color: var(--dark-blue);
+  text-decoration: underline;
+}
+
+.blue-link:hover {
+  text-decoration: none;
+}
+
+.grey-link {
+  color: var(--grey);
+  text-decoration: underline;
+}
+
+.grey-link:hover {
+  text-decoration: none;
+}
+
+.btn-blue {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: var(--blue);
+  border: none;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+.btn-blue:hover {
+  background-color: var(--dark-blue);
+}
+
+.mt2 {
+  margin-top: 2rem;
 }
 
 .container {
@@ -93,11 +140,6 @@ button {
   margin: 0 auto;
 }
 
-.nyt-logo {
-  width: 100%;
-  height: 100%;
-}
-
 /* Nav bar right */
 
 .nav-bar-right {
@@ -108,19 +150,13 @@ button {
 }
 
 .nav-bar-right button {
-  text-transform: uppercase;
   font-size: 1.1rem;
   font-weight: 700;
-  color: #fff;
   padding: 0.9rem 1.2rem 0.7rem 1.2rem;
   background-color: var(--blue);
   border: none;
   border-radius: 3px;
   transition: all 0.5s;
-}
-
-.nav-bar-right button:hover {
-  background-color: var(--dark-blue);
 }
 
 .nav-bar-right > *:not(:last-child) {
@@ -160,16 +196,8 @@ button {
   width: 94.5rem;
 }
 
-.header-img-caption {
-  font-size: 1.5rem;
-  color: #666;
-  margin-top: 1rem;
+.figcaption-header {
   margin-right: 28%;
-}
-
-.img-owner {
-  font-size: 1.3rem;
-  color: #888;
 }
 
 /* Header bottom */
@@ -206,7 +234,8 @@ button {
   list-style-type: none;
   display: grid;
   justify-self: end;
-  grid-template-columns: repeat(6, 1fr);
+  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
   gap: 1.5rem;
 }
 
@@ -230,16 +259,18 @@ button {
   border: 1px solid #ccc;
 }
 
-.action:nth-last-child(-n + 2) i {
+.fa-bookmark,
+.fa-comment-alt {
   font-size: 2.4rem;
-  color: #666;
+  color: var(--grey);
 }
 
-.action:nth-last-child(-n + 2) i:hover {
+.fa-bookmark:hover,
+.fa-comment-alt:hover {
   color: #ddd;
 }
 
-.action:last-child i {
+.fa-comment-alt {
   font-size: 3.2rem;
   align-self: flex-start;
   position: relative;
@@ -252,4 +283,103 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -70%);
+}
+
+/* Article body */
+
+.article-body {
+  font-family: 'Times New Roman', Times, serif;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  justify-items: center;
+  gap: 3rem;
+  row-gap: 4rem;
+}
+
+/* Paragraphs */
+
+.paragraphs {
+  width: 60rem;
+  grid-column: 1 / -1;
+  display: grid;
+  row-gap: 1.5rem;
+  justify-content: center;
+  font-size: 2.2rem;
+}
+
+.paragraphs > p {
+  line-height: 3rem;
+}
+
+.ty-msg {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.ty-msg a {
+  color: var(--dark-blue);
+}
+
+.hor-line {
+  width: 7.2rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.hor-line-top {
+  margin: 0 auto 1.8rem;
+}
+
+.hor-line-bottom {
+  margin: 1.8rem auto 0;
+}
+
+/* Timeline */
+
+.timeline {
+  grid-column: 1 / -1;
+  width: 94.5rem;
+  margin: -2rem 0;
+}
+
+.timeline iframe {
+  width: 100%;
+}
+
+/* Article body figure */
+
+.article-body-figure {
+  grid-column: 1 / -1;
+  width: 60rem;
+}
+
+.figcaption-content {
+  margin-right: 10%;
+}
+
+/* Article bottom */
+
+.article-bottom {
+  grid-column: 1 / -1;
+  width: 60rem;
+  color: var(--grey);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  row-gap: 4rem;
+  margin-top: -2rem;
+}
+
+.article-bottom p {
+  grid-column: 1 / -1;
+  font-size: 1.2rem;
+}
+
+.btn-large {
+  font-size: 1.4rem;
+  padding: 0.6rem;
+  width: 33rem;
 }
