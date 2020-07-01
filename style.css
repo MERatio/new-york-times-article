@@ -84,6 +84,7 @@ button {
 .container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  justify-items: center;
 }
 
 /* Nav bar */
@@ -95,6 +96,7 @@ button {
   padding-bottom: 0.2rem;
   border-bottom: 1px solid #e2e2e2;
   position: relative;
+  justify-self: stretch;
 }
 
 /* Nav bar left */
@@ -382,4 +384,94 @@ button {
   font-size: 1.4rem;
   padding: 0.6rem;
   width: 33rem;
+}
+
+/* Suggested */
+
+.suggested {
+  font-family: 'Times New Roman', Times, serif;
+  grid-column: 1 / -1;
+  margin-top: 6rem;
+  max-width: 120rem;
+  display: grid;
+  grid-template-columns: 8fr 3fr;
+  grid-template-rows: repeat(3, auto);
+  align-items: flex-start;
+  gap: 2rem 2.8rem;
+}
+
+.other-articles-section h2,
+.most-popular-articles-section h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+/* Other articles */
+
+.other-articles-section {
+  padding-top: 1.7rem;
+  border-top: 1px solid #000;
+}
+
+.other-articles-section h2 {
+  color: #000;
+}
+
+.other-articles-section h2:hover {
+  text-decoration: underline;
+}
+
+.other-articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 4.5rem 1.7rem;
+}
+
+.other-article figcaption {
+  display: grid;
+  row-gap: 0.4rem;
+}
+
+.other-article-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #121212;
+}
+
+.other-article-title:hover {
+  color: var(--grey);
+}
+
+.other-article-img-credit {
+  font-size: 1rem;
+  color: #999;
+  justify-self: end;
+}
+
+.other-article-upload-date {
+  font-size: 1.2rem;
+  color: #999;
+  justify-self: start;
+}
+
+/* Editor's pick */
+
+.editors-pick-section {
+  grid-row: 2 / 3;
+}
+
+/* Most popular articles */
+
+.most-popular-articles-section {
+  grid-row: 1 / -1;
+  padding-top: 1.7rem;
+  border-top: 1px solid #000;
+}
+
+.most-popular-article {
+  font-size: 1.9rem;
+  color: #121212;
+  padding: 1.5rem 0;
+  border-top: 1px solid #e2e2e2;
 }
