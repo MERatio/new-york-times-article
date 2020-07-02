@@ -165,16 +165,9 @@ button {
   margin-right: 0.3rem;
 }
 
-/* Content */
-
-.content {
-  margin-top: 6rem;
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-}
-
+/* Header */
 .header {
+  margin-top: 6rem;
   font-family: 'Times New Roman', Times, serif;
   grid-column: 1 / -1;
   display: grid;
