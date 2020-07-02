@@ -94,8 +94,13 @@ button {
   font-family: helvetica, arial, sans-serif;
   padding-top: 0.4rem;
   padding-bottom: 0.2rem;
+  background-color: #fff;
   border-bottom: 1px solid #e2e2e2;
-  position: relative;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
   justify-self: stretch;
 }
 
