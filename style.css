@@ -332,6 +332,51 @@ button {
   margin: 1.8rem auto 0;
 }
 
+.paragraphs-and-aside {
+  grid-column: 1 / -1;
+  width: 117rem;
+  display: grid;
+  grid-template-columns: 21rem 1fr 21rem;
+}
+
+.paragraphs-and-aside h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.paragraphs-and-aside .paragraphs {
+  justify-self: center;
+  grid-column: 2 / 3;
+}
+
+.aside-editors-picks {
+  display: grid;
+  align-content: center;
+  row-gap: 1.8rem;
+}
+
+.aside-editors-pick:hover .editors-pick-title {
+  text-decoration: underline;
+}
+
+.aside-editors-pick a {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.aside-editors-pick-img {
+  width: 7.5rem;
+}
+
+.editors-pick-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
 /* Timeline */
 
 .timeline {
