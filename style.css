@@ -172,7 +172,7 @@ button {
 
 /* Header */
 .header {
-  margin-top: 6rem;
+  margin-top: 10rem;
   font-family: 'Times New Roman', Times, serif;
   grid-column: 1 / -1;
   display: grid;
