@@ -186,7 +186,7 @@ ul {
 }
 
 .header-title {
-  width: 60rem;
+  max-width: 60rem;
   font-size: 4rem;
   color: #121212;
   font-weight: 700;
@@ -197,7 +197,7 @@ ul {
 
 .header-img-figure {
   grid-column: 1 / -1;
-  width: 94.5rem;
+  max-width: 94.5rem;
 }
 
 .figcaption-header {
@@ -208,7 +208,7 @@ ul {
 
 .header-bottom {
   margin-top: 1.5rem;
-  width: 60rem;
+  max-width: 60rem;
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -303,7 +303,7 @@ ul {
 /* Paragraphs */
 
 .paragraphs {
-  width: 60rem;
+  max-width: 60rem;
   grid-column: 1 / -1;
   display: grid;
   row-gap: 1.5rem;
@@ -343,6 +343,7 @@ ul {
 .paragraphs-and-aside {
   grid-column: 1 / -1;
   width: 117rem;
+  max-width: 117rem;
   display: grid;
   grid-template-columns: 21rem 1fr 21rem;
 }
@@ -412,7 +413,7 @@ ul {
 
 .article-bottom {
   grid-column: 1 / -1;
-  width: 60rem;
+  max-width: 60rem;
   color: var(--grey);
   display: grid;
   grid-template-columns: auto 1fr;
@@ -575,7 +576,8 @@ ul {
 .site-index {
   grid-column: 1 / -1;
   font-family: Arial, Helvetica, sans-serif;
-  width: 120rem;
+  max-width: 120rem;
+  width: 100%;
   margin-top: 2rem;
 }
 
@@ -674,6 +676,7 @@ ul {
 .footer {
   grid-column: 1 / -1;
   max-width: 120rem;
+  width: 100%;
   padding: 0.9rem 0;
   border-top: 1px solid #ebebeb;
   margin: 1rem 0 8rem 0;
