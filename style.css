@@ -576,7 +576,6 @@ ul {
   grid-column: 1 / -1;
   font-family: Arial, Helvetica, sans-serif;
   width: 120rem;
-  padding-bottom: 8rem;
   margin-top: 2rem;
 }
 
@@ -668,4 +667,33 @@ ul {
 .site-index-other-links {
   padding-top: 1rem;
   border-top: 1px solid #e2e2e2;
+}
+
+/* Footer */
+
+.footer {
+  grid-column: 1 / -1;
+  max-width: 120rem;
+  padding: 0.9rem 0;
+  border-top: 1px solid #ebebeb;
+  margin: 1rem 0 8rem 0;
+}
+
+.footer-nav-list {
+  padding: 0 7rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-nav-item:not(:last-of-type) {
+  margin-right: 1rem;
+}
+
+.footer-nav-link {
+  color: var(--grey);
+}
+
+.footer-nav-link:hover {
+  text-decoration: underline;
 }
